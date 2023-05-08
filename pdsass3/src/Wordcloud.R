@@ -14,7 +14,7 @@ library(wordcloud)
 library(SnowballC)
 
 #Loading data
-Data<- read.csv("/Users/nikhilgande/Documents/pdsass3/Corona_NLP_test.csv")
+Data<- read.csv("/Users/nikhilgande/Documents/pdsass3/data_clean/Corona_NLP_test.csv")
 print(Data)
 
 
