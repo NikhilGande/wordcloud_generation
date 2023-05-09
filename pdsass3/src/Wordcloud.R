@@ -29,19 +29,19 @@ print(tokens)
 #counting word frequencies
 
 
-frequency<- tokens %>%
+freq <- tokens %>%
   count(word, sort = TRUE)
 
 
 #word_freq<-tokens
-print(frequency)
+print(freq)
 
 #creating word cloud 
 png("/Users/nikhilgande/Documents/pdsass3/results/wordcloud.png", width = 800, height = 800, units = "px")
-wordcloud(words = frequency$word, freq = frequency$n, min.freq = 1,
+wordcloud(words = freq$word, freq = freq$n, min.freq = 1,
           max.words = 200, random.order = FALSE, rot.per = 0.35,
           colors = brewer.pal(8, "Dark2"))
-
+dev.off()
 
 
 
